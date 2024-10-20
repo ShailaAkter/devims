@@ -3,8 +3,9 @@ import dotenv from 'dotenv';
 import morgan from 'morgan';
 import cors from 'cors';
 import connectDB from './config/db.js';
-import authRoutes from './routes/authRoutes.js'
-
+import authRoutes from './routes/authRoutes.js';
+import peopleRoutes from './routes/peopleRoute.js';
+import productRoutes from './routes/productRoutes.js';
 //configure environment variables
 dotenv.config();
 
@@ -24,7 +25,14 @@ app.use(morgan("dev"));
 
 //*all routes
 //auth routes
-app.use('/api/v1/auth',authRoutes);
+app.use('/api/v1/auth', authRoutes);
+
+//people routes
+app.use('/api/v1/people', peopleRoutes);
+
+//product routes
+app.use('/api/v1/product', productRoutes);
+
 
 
 
