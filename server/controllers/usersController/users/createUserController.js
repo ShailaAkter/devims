@@ -1,7 +1,7 @@
 import slugify from "slugify";
-import userModel from "../../../models/usersModels/userModel.js";
 import { checkCapital, checkEmail } from "../../../utils/authValidation.js";
 import fs from 'fs';
+import userModel from "../../../models/usersModel/userModel.js";
 
 
 export const createUserController = async (req, res) =>

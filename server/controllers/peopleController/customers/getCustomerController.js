@@ -1,4 +1,4 @@
-import customerModel from "../../../models/peopleModels/customerModel.js";
+import customerModel from "../../../models/peopleModel/customerModel.js";
 
 export const getCustomerController = async(req, res) =>
 {

@@ -1,4 +1,4 @@
-import roleModel from "../../../models/usersModels/roleModel.js";
+import roleModel from "../../../models/usersModel/roleModel.js";
 
 export const createRoleController = async (req, res) =>
 {

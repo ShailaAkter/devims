@@ -1,5 +1,5 @@
 import productModel from "../../../models/productsModel/productModel.js";
-import userModel from "../../../models/usersModels/userModel.js";
+import userModel from "../../../models/usersModel/userModel.js";
 
 export const getProductController = async(req, res) =>
 {

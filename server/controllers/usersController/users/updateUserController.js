@@ -1,4 +1,4 @@
-import userModel from "../../../models/usersModels/userModel.js";
+import userModel from "../../../models/usersModel/userModel.js";
 import fs from 'fs';
 import { checkCapital, checkEmail } from "../../../utils/authValidation.js";
 import slugify from "slugify";

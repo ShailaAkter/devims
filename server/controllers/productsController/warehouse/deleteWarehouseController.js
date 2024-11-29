@@ -16,7 +16,7 @@ export const deleteWarehouseController = async(req, res) =>
 
         res.status(500).send({
             success: false,
-            message: "Error occured while deleting warehouse!",
+            message: "Error occured whdile deleting warehouse!",
             error
         })
     }

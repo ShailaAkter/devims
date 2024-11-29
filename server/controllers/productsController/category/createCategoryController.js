@@ -30,7 +30,7 @@ export const createCategoryController = async(req, res) =>
 
         res.status(201).send({
             success: true,
-            message: "New supplier created!",
+            message: "New category created!",
             newCategory
         })
     }

@@ -1,4 +1,4 @@
-import supplierModel from "../../../models/peopleModels/supplierModel.js";
+import supplierModel from "../../../models/peopleModel/supplierModel.js";
 
 export const getSupplierController = async (req, res) =>
 {

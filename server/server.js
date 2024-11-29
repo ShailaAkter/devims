@@ -5,7 +5,16 @@ import cors from 'cors';
 import connectDB from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
 import peopleRoutes from './routes/peopleRoute.js';
-import productRoutes from './routes/productRoutes.js';
+import productsRoutes from './routes/productsRoutes.js';
+import adjustmentsRoutes from './routes/adjustmentsRoutes.js';
+import transfersRoutes from './routes/transfersRoutes.js';
+import quotationsRoutes from './routes/quotationsRoutes.js';
+import purchasesRoutes from './routes/purchasesRoutes.js';
+import salesRoutes from './routes/salesRoutes.js';
+import salesReturnRoutes from './routes/salesReturnRoutes.js';
+import returnPurchasesRoutes from './routes/returnPurchasesRoutes.js';
+import accountingRoutes from './routes/accountingRoutes.js';
+
 //configure environment variables
 dotenv.config();
 
@@ -31,9 +40,31 @@ app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/people', peopleRoutes);
 
 //product routes
-app.use('/api/v1/product', productRoutes);
+app.use('/api/v1/product', productsRoutes);
 
+//adjustments routes
+app.use('/api/v1/adjustment', adjustmentsRoutes);
 
+//transfers routes
+app.use('/api/v1/transfers', transfersRoutes);
+
+//quotations routes
+app.use('/api/v1/quotation', quotationsRoutes);
+
+//purchase routes
+app.use('/api/v1/purchase', purchasesRoutes);
+
+//sales routes
+app.use('/api/v1/sales', salesRoutes);
+
+//sales return routes
+app.use('/api/v1/sales-return', salesReturnRoutes);
+
+//return purchase routes
+app.use('/api/v1/return-purchase', returnPurchasesRoutes);
+
+//accounting routes
+app.use('/api/v1/accounting', accountingRoutes);
 
 
 //rest api

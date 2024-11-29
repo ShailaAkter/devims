@@ -1,5 +1,5 @@
 import slugify from "slugify";
-import supplierModel from "../../../models/peopleModels/supplierModel.js";
+import supplierModel from "../../../models/peopleModel/supplierModel.js";
 import { checkCapital, checkEmail } from "../../../utils/authValidation.js";
 
 
